@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+    <form name="registerForm" action="/user/register" method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="uname"><br/></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="upwd"><br/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="注册" style="color:#BC8F8F"><br/></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

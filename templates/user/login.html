@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+</head>
+<body>
+    <form name="loginForm" action="/user/login" method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="uname" placeholder="张三"><br/></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="upwd" placeholder="123456"><br/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="登录" style="color:#BC8F8F"><br/></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
